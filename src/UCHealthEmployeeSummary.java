@@ -14,11 +14,7 @@ public class UCHealthEmployeeSummary {
     }
 
     public UCHealthEmployee find(String name) {
-        for (UCHealthEmployee e : employees) {
-            if (e.name.equals(name))
-                return e;
-        }
-        return null;
+        return employees.stream().filter(e -> e.name.equals(name)).findFirst().orElse(null);
     }
 
     public void setHours(String name, double hours) {
