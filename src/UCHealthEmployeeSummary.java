@@ -21,11 +21,11 @@ public class UCHealthEmployeeSummary {
     }
 
     public void setSalary(String name, double salary) {
-        find(name).setHours(salary);
+        find(name).setSalary(salary);
     }
 
     public void setPatients(String name, double patients) {
-        find(name).setHours(patients);
+        find(name).setPatients(patients);
     }
 
     public double payroll() {
