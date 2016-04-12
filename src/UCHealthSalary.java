@@ -1,14 +1,8 @@
-
-
-import java.io.*;
-import java.util.*;
-
-
 public class UCHealthSalary {
 
 
     public static void main(String argv[]) {
-        /***
+
          UCHealthEmployeeSummary emp = new UCHealthEmployeeSummary();
          emp.enqueue(new PhysicianAssistantManager("Laura", 1000));
          emp.enqueue(new PhysicianAssistantManager("Edward", 1000));
@@ -39,6 +33,6 @@ public class UCHealthSalary {
 
          emp.display();
          System.out.println("Payroll: "+emp.payroll());
-         ***/
+
     }
 }
