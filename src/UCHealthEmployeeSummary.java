@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.stream.Collectors;
 
 public class UCHealthEmployeeSummary {
 
@@ -18,18 +17,15 @@ public class UCHealthEmployeeSummary {
     }
 
     public void setHours(String name, double hours) {
-        employees.stream().filter(e -> e.name.equals(name))
-                .forEach(e -> e.setHours(hours));
+        find(name).setHours(hours);
     }
 
     public void setSalary(String name, double salary) {
-        employees.stream().filter(e -> e.name.equals(name))
-                .forEach(e -> e.setSalary(salary));
+        find(name).setHours(salary);
     }
 
     public void setPatients(String name, double patients) {
-        employees.stream().filter(e -> e.name.equals(name))
-                .forEach(e -> e.setPatients(patients));
+        find(name).setHours(patients);
     }
 
     public double payroll() {
